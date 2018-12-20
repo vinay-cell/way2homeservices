@@ -1,0 +1,150 @@
+
+    <!--Terms and Conditions Start-->
+    <section>
+    	<div class="container" style="margin-top:108px;">
+    	</br>
+            <div class="row">
+           
+                <div class="col-md-7 terms-conditions">
+                	 <div class="terms-heading wow fadeInLeft">
+                    	<h3><!--Thank you for availing <span>Electrical</span> services. Please Enter your details below-->Fill the form for booking</h3>
+                    </div>
+                    <div class="text-justify wow fadeInLeft">
+                       	<form class="form-spacing" name="bookingServicesForm" novalidate >
+                 
+                            	<div class="form-group col-md-6">
+                                	<label id="firstname">Select an Area</label>
+    								<select class="form-control" id="area" name="Area" ng-model="customerBookingDetails.customerArea"required>
+                                    	<option ng-selected="true">Select Area</option>
+                                    	<option>Kukatpally</option>
+                                    	<option>Housing Board</option>
+                                        <option>Vivekananda Nagar</option>
+                                        <option>HMT Satavahana Nagar</option>
+                                        <option>Allwyn Colony</option>
+                                        <option>Pragathi Nagar</option>
+                                        <option>Malaysian Township</option>
+                                        <option>nizampet</option>
+                                        <option>vasanth nagar</option>
+                                    </select>
+                                    <span ng-show="bookingServicesForm.Area.$invalid &&  (bookingServicesForm.Area.$touched || bookingServicesForm.$submitted)" style="color:red;">Area is Required</span> 
+                                </div>
+                                <!-- <div class="form-group col-md-6">
+                                <label id="lastname">Enter Area PinCode</label>
+    								<input type="number" maxlength="6" name="pincode" class="form-control" id="pincode" placeholder="Enter PinCode" ng-model="customerBookingDetails.customerPincode"required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="6">
+    								<span ng-show="bookingServicesForm.pincode.$invalid &&  (bookingServicesForm.pincode.$touched || bookingServicesForm.$submitted)" style="color:red;">Pincode is Required</span>                             
+    								</div> -->
+                                 <div class="form-group col-md-6">
+                                <label id="mobilenumber">Enter Full Name</label>
+    								<input type="text" maxlength="30" class="form-control" id="fullname" name="Name" placeholder="Enter Full Name" ng-model="customerBookingDetails.customerFullName"required>
+    								<span ng-show="bookingServicesForm.Name.$invalid &&  (bookingServicesForm.Name.$touched || bookingServicesForm.$submitted)" style="color:red;width:20%;">Name is required </span>
+                                </div>
+                                
+                                   <div class="form-group col-md-6" style="clear: both;">
+                                <label id="emailid">Email Id</label>
+    								<input type="email" class="form-control"name="emailId" id="emailid" placeholder="Enter Your Email" ng-model="customerBookingDetails.emailId" ng-pattern="word" required>
+                                <span ng-show="bookingServicesForm.emailId.$invalid &&  (bookingServicesForm.emailId.$touched || bookingServicesForm.$submitted)" style="color:red;">Email is required </span>
+                                </div>
+                                <div class="form-group col-md-6">
+                                <label id="mobilenumber">Mobile Number</label>
+    								<input type="number" class="form-control" id="mobilenumber" name="mobiNo" ng-pattern="phoneNumbr"placeholder="Enter Mobile Number" ng-model="customerBookingDetails.customerMobileNo"required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10">
+                                
+                                <span class="error" ng-show="bookingServicesForm.mobiNo.$invalid &&  (bookingServicesForm.mobiNo.$touched || bookingServicesForm.$submitted)" style="color:red;">Please provide valid number</span>
+                                </div>
+                             
+                               <!--  <div class="form-group col-md-6">
+                                <label id="address">Address</label>
+                                	<textarea class="form-control" rows="3"  name="Address" placeholder="Please Enter your Address" ng-model="customerBookingDetails.customerAddress"required></textarea>
+                                <span ng-show="bookingServicesForm.Address.$invalid &&  (bookingServicesForm.Address.$touched || bookingServicesForm.$submitted)" style="color:red;">Address is required </span>
+                              
+                                </div> 
+                                
+                              
+                                 <div class="form-group col-md-6">
+                                <label id="preffereddate">Preffered Date</label>
+    								 <input type="text" class="form-control" id="" placeholder="Date" datepicker ng-model="userProductDetails.cusomerPrefferdDate" readonly/>
+                                <input type="date" class="form-control" id="date" placeholder="Date" name="date"  ng-model="customerBookingDetails.customerPrefferdDate" required />
+                                <span ng-show="bookingServicesForm.date.$invalid && (bookingServicesForm.date.$touched || bookingServicesForm.$submitted)" style="color:red;" >Date is required </span> 
+                      
+                                 </div>
+                               
+                                <div class="form-group col-md-6">
+                                <label id="prefferedtime">Preffered Time</label>
+                                <select class="form-control" id="prefferedtime" name="time" ng-model="customerBookingDetails.customerPrefferedTime" required>
+                                    	<option ng-selected="true">Select Time</option>
+                                    	<option>8AM</option>
+                                        <option>10AM</option>
+                                        <option>12PM</option>
+                                        <option>2PM</option>
+                                        <option>3PM</option>
+                                        <option>4PM</option>
+                                        <option>6PM</option>
+                                    </select>
+    								
+                                </div> -->
+                                <div class="form-group col-md-6" style="clear: both;">
+    								<input type="checkbox" id="accept-tc" class="checkbox-spacing" name="accept" ng-model="customerBookingDetails.chekebox" required>I accept W2HS T&C
+                                    <br/><span ng-show="bookingServicesForm.accept.$invalid && (bookingServicesForm.accept.$touched || bookingServicesForm.$submitted)" style="color:red;">Please select the W2HS T&C </span>
+                                </div>
+                                <span ng-show="bookingServicesForm.accept.$invalid &&  (bookingServicesForm.accept.$touched || bookingServicesForm.$submitted)" style="color:red;"></span>	
+                                
+                                <div class="form-group col-md-6">
+                                	  <button class="btn btn-orange" type="submit" id="submit" ng-click="confirmBookService(bookingServicesForm.$valid)">Confirm Booking</button>
+                                 
+                                </div>
+                                	
+                                </form> 
+                       <!-- <span style="color:green;">{{responseMsg.message}}</span>
+                        <span>{{errorMesssage}}</span>  -->
+                    </div>
+                    <!--  popup-->
+                  <div class="modal fade confirmBookPOPUP" tabindex="-1" role="dialog"  style="display:none;opacity:1 !important;" ng-show="myVar">
+				 <div class="modal-dialog">
+				   <div class="modal-content">
+				     <div class="modal-header">
+				       <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				       <h4 class="modal-title">Modal title</h4>
+				     </div>
+				     <div class="modal-body">
+				       <p>One fine body&hellip;</p>
+				     </div>
+				     <div class="modal-footer">
+			
+				       
+				     </div>
+				   </div>
+				 </div>
+				</div>
+                    
+                </div>
+                
+                <div class="col-md-5 hidden-xs">
+                	<div class="terms-heading wow fadeInRight">
+                		<h3>Why Way 2 Home Services?</h3>
+                    </div>
+                    <div class="text-justify">
+                    	<h4 class="orange">Easy & Quick Service</h4>
+                        <p>We know and understand that time is valuable. So being on time and completing the job quickly and efficiently is of almost importance to us.</p>
+                    </div>
+                    <div class="text-justify">
+                    	<h4 class="orange">Quality Assurance</h4>
+                        <p>We carefully handpick our technicians and advisors to make sure the job is done well and only by experienced professionals.</p>
+                    </div>
+                    <div class="text-justify">
+                    	<h4 class="orange">Only Skilled & Experienced Servicemen</h4>
+                        <p>Our entire team is dedicated to only one cause; to make sure that you have an excellent experience with us, and you think of us every time a household chore needs to be done.</p>
+                    </div>
+                    <div class="text-justify">
+                    	<h4 class="orange">Finest Professionals</h4>
+                        <p>All our advisors are well trained and experienced professionals with relevant background checks done to make sure your satisfaction is at a 100%.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>  
+     
+
+          </section>
+  
+
+	
+    

@@ -1,0 +1,220 @@
+
+
+<div style="height: 305px">
+   <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+     <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+       <img ng-src="{{slide.image}}" style="margin:auto;">
+       <div class="carousel-caption">
+
+		<div class="carousel-content"> 
+			<h2 class="wow fadeInUp animated" style="visibility: visible; animation-name: fadeInUp;">
+				<span style="color:#ffffff;">{{slide.name.name}}</span>
+			</h2>
+			<p class="wow fadeInLeft animated" style="visibility: visible; animation-name: fadeInLeft;">{{slide.name.desc}}</p>
+			<a class="btn btn-primary btn-lg wow fadeInDown animated" href="#/{{slide.name.clickEvent}}" target="_blank" style="visibility: visible; animation-name: fadeInDown;">Read
+				More</a>
+		</div>
+	</div>
+     </uib-slide>
+   </uib-carousel>
+ </div>
+
+
+
+ <!--Banner Start-->
+   <!--/#main-slider-->
+    <!--Banner End-->
+    
+	<!-- about-->
+    <section id="aboutus" style="margin:110px auto;">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown"></h2>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6 wow fadeInLeft">
+			
+					<iframe width="560" height="315" src="https://www.youtube.com/embed/J5Ur_GQNfTI" frameborder="0" allowfullscreen></iframe>
+
+			</div>
+                <div class="col-md-6 col-sm-12 wow fadeInRight">    
+                    <p class="text text-justify">Way2HomeServices is started to provide quality and in time services in Hyderabad.We provide a way, solution to all your home services in cost effective way to below services. Our team of experienced technicians are well qualified and possess expertise and rich experience of managing complex home service problems. We are just a click away by call, whatsapp,web request,etc.</p>
+
+                	
+                    <div class="row">
+                		<div class="col-md-4 col-xs-12"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><span>Electrical Work</span></div>
+                        <div class="col-md-4 col-xs-12"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><span>Plumber Work</span></div>
+                        <div class="col-md-4 col-xs-12"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><span>Carpenter Work</span></div>
+
+        			</div>
+                    <div class="row">
+                        <div class="col-md-4 col-xs-12"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><span>Painting Work</span></div>    
+                		<div class="col-md-4 col-xs-12"><i class="fa fa-chevron-circle-right fa-2x" aria-hidden="true"></i><span>Interior Design</span></div>
+                           
+        			</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--about end -->
+
+	<!--mission -->
+
+    <section id="ourservices" >
+        <div class="container">
+
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Our Services</h2>
+            </div>
+
+            <!--row 1-->
+            <div class="row rowspacing">
+           	  <div class="col-sm-12 wow fadeInRight">
+              		<div class="col-md-4 col-xs-12">
+                    	<a href="#/electrical" target="_blank" ng-click="baseServicesUrl()">
+                    		<img src="images/services-electrical.png" class="img-responsive img-center" width="162" height="162">
+                        </a>
+                        <h3 class="text-center">Electrical</h3>
+                    </div>
+                    <div class="col-md-4 col-xs-12">
+                    	<a href="#/plumber" target="_blank">
+                        	<img src="images/services-plumber.png" class="img-responsive img-center" width="162" height="162">
+                        </a>
+                        <h3 class="text-center">Plumber</h3>
+                    </div>
+            		<div class="col-md-4 col-xs-12">
+               	  		<a href="#/carpenter" target="_blank">
+                        	<img src="images/services-carpenter.png" class="img-responsive img-center" width="162" height="162">
+                        </a>    
+                        	<h3 class="text-center">Carpenter</h3>
+                  	</div>
+                        	
+        			
+            	</div>
+            </div>
+            <!--/.row 1-->
+            <!--row 2-->
+            <div class="row rowspacing">
+           	  <div class="col-sm-12 wow fadeInRight">
+            		
+        			<div class="col-md-4 col-xs-12">
+                    	<a href="#/painting" target="_blank">
+                        	<img src="images/services-painting.png" class="img-responsive img-center" width="162" height="162">
+                        </a>
+                        <h3 class="text-center">Painting</h3>
+                    </div>
+        			<div class="col-md-4 col-xs-12">
+               	  		<a href="#/interior" target="_blank">
+                        	<img src="images/services-interier.png" class="img-responsive img-center" width="162" height="162">
+                        </a>
+                        <h3 class="text-center">Interior Design</h3>
+                  	</div>
+            </div>
+            </div>
+           <!--  row 2--> 
+        </div><!--/.container-->
+    </section>
+    <!--ourservices end -->
+    
+        
+    <!--Testimonials Start -->
+    <section id="testimonials" class="testimonials-bg">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">Testimonials</h2>
+            </div>
+            <!--row 1-->
+            <div class="row rowspacing">
+           	  <div class="col-md-6 col-md-offset-3 col-sm-12 wow fadeInRight">
+              		<div class="slider responsive" width='450' height='300'>
+  						<div>
+                        	<img src="images/testimonials-img1.png" class="img-responsive img-center" >
+                          	<p> I work with text too! And I'm just testing length here and stuff it's cool you know because that's important to do I guess hey did I ever tell you about that time that I did that stuff with the thing</p>
+                        </div>
+                      	<!-- <div>
+                        	<img src="images/testimonials-img2.png" class="img-responsive img-center" >
+                          	<p> I work with text too! And I'm just testing length here and stuff it's cool you know because that's important to do I guess hey did I ever tell you about that time that I did that stuff with the thing</p>
+                        </div> -->
+                      	<div>
+                        	<img src="images/testimonials-img3.png" class="img-responsive img-center" >
+                          	<p> I work with text too! And I'm just testing length here and stuff it's cool you know because that's important to do I guess hey did I ever tell you about that time that I did that stuff with the thing</p>
+                        </div>
+                    </div>
+                </div>
+             </div>       
+            <!--/.row 1-->
+        </div>
+    </section>
+    <!--Testimonials End-->
+    
+    <!--Testimonials Start -->
+    <section id="contactus">
+    <div id="contactus.html">
+        <div class="container-fluid" style="padding-left:0px;padding-right:0px;">
+            <div class="section-header">
+                <h2 class="section-title text-center wow fadeInDown">ContactUs</h2>
+            </div>
+            <div>
+<!--             	<iframe src="<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.045058580899!2d78.41192446445044!3d17.505362388008017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91dcc91cbe1f%3A0xc8ec309446c12ebf!2s2nd+Phase%2C+Allwyn+Colony%2C+Kukatpally%2C+Hyderabad%2C+Telangana+500072!5e0!3m2!1sen!2sin!4v1491564980773" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>" width="100%" height="300" frameborder="0" style="border:0;z-index:99;" allowfullscreen=""></iframe>
+ -->           
+ <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.045058580899!2d78.41192446445044!3d17.505362388008017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91dcc91cbe1f%3A0xc8ec309446c12ebf!2s2nd+Phase%2C+Allwyn+Colony%2C+Kukatpally%2C+Hyderabad%2C+Telangana+500072!5e0!3m2!1sen!2sin!4v1491807510393" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> 
+ 
+ </div>          
+        </div>
+        
+        <div class="container" 	id="dialogContainer"  ng-cloak>
+        	<div class="row contact-form">
+                <div class="col-sm-12 col-md-6 wow fadeInLeft">
+                	<h2>Send Us Message</h2>
+                	<form class="form-spacing" name="contactusForm"  novalidate  > 
+                            	<div class="form-group col-md-6">
+                                	<label id="firstname">First Name</label>
+                                	<!-- <span class="glyphicon glyphicon-star" aria-hidden="true"></span> -->
+    								<input type="text" class="form-control" id="firstname" name="name" placeholder="Enter First Name" ng-model="customerBookingDetails.customerFullName" required>  
+                               <span ng-show="contactusForm.name.$invalid &&  (contactusForm.name.$touched || contactusForm.$submitted)" style="color:red;">First Name is required </span>
+                               
+                                </div>
+                               <!--  <div class="form-group col-md-6">
+                                <label id="lastname">Last Name</label>
+    								<input type="text" class="form-control" id="lastname"  name="lastname"placeholder="Enter Last Name" ng-model="customerBookingDetails.lastName"required>
+                                 <span ng-show="contactusForm.lastname.$invalid &&  (contactusForm.lastname.$touched || contactusForm.$submitted)" style="color:red;">Last Name is required </span>
+                                </div> -->
+                                <div class="form-group col-md-6">
+                                <label id="mobilenumber">Mobile Number</label>
+    							<input type="number" ng-minlength="10" class="form-control" id="mobilenumber" name="mobiNo" placeholder="Enter Mobile Number" ng-model="customerBookingDetails.customerMobileNo" required oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" maxlength="10" ng-pattern="phoneNumbr">
+                                 <span ng-show="contactusForm.mobiNo.$invalid && (contactusForm.emailId.$touched || contactusForm.$submitted)" style="color:red; clear:none">Mobile No is required</span>
+                                </div>
+                                <div class="form-group col-md-6" style="clear: both;">
+                                <label id="emailid">Email Id</label>
+    								<input type="email" class="form-control" id="emailid" name="emailId" ng-pattern="word" placeholder="Enter Your Email" ng-model="customerBookingDetails.emailId" required>
+                                  <span ng-show="contactusForm.emailId.$invalid &&  (contactusForm.emailId.$touched || contactusForm.$submitted)" style="color:red; clear:both;">Email is required </span>
+                                </div>
+                                <div class="form-group col-md-12">
+                                	<textarea class="form-control" rows="3" maxlength="500" id="textMsg" placeholder="500 Characters left..." ng-model="customerBookingDetails.textMsg" required></textarea>
+                                </div>
+                                <div class="form-group col-md-12">
+                                	<button class="btn btn-orange pull-right ngdialog-button ngdialog-button-primary" id="submitFormBtn"  type="submit" ng-click="confirmBookServiceForm(contactusForm.$valid)" ng-click="submitted=true">Submit</button>
+                              
+                                </div>
+                                              </form> 
+                </div>
+            	<div class="col-md-6 wow fadeinright">
+                	<h2>get in touch</h2>
+                    <ul>
+                    	<!-- <li>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,</li> -->
+                    	<li><span><i class="fa fa-envelope" aria-hidden="true"></i></span><a href="mailto:way2homeservices@gmail.com" target="_top" style="color:#fba816;">way2homeservices@gmail.com </a></li>
+                    	<li><span><i class="fa fa-phone" aria-hidden="true"></i></span>+91 9866 999 422</li>
+                    	<li><span><i class="fa fa-map-marker" aria-hidden="true"></i></span>
+                    	C145,II Phase,Allwyn Colony, Kukatpally, Hyd-500072
+                        </li>
+                    </ul>         
+                </div>
+            </div>    
+        </div>
+        </div>
+       <a href="https://msg91.com/startups/?utm_source=startup-banner"><img src="https://msg91.com/images/startups/msg91Badge.png" width="120" height="90" title="MSG91 - SMS for Startups" alt="Bulk SMS - MSG91" style="
+    position: relative;
+    top: -100px;
+    float: right;
+       "></a>
+    </section>
