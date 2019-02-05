@@ -26,6 +26,7 @@ steps:
     contents: '**/*.war'
     targetFolder: '$(build.artifactStagingDirectory)'
 
+
 - task: PublishBuildArtifacts@1
   inputs:
     artifactName: 'war'
