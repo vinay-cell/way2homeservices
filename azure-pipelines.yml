@@ -21,7 +21,6 @@ steps:
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
 
-steps:
 - task: CopyFiles@2
   inputs:
     contents: '_buildOutput\**'
