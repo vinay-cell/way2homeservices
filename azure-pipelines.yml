@@ -20,3 +20,9 @@ steps:
     publishJUnitResults: false
     testResultsFiles: '**/surefire-reports/TEST-*.xml'
     goals: 'package'
+
+- task: AzureRmWebAppDeployment@3
+  inputs:
+    azureSubscription: 'd89ecbbd-bdd6-4929-84da-33948a7073d9'
+    WebAppName: 'way2home'
+    Package: '$(System.DefaultWorkingDirectory)/**/*.war'
