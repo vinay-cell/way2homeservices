@@ -23,6 +23,7 @@ steps:
 
 
 
+
 - task: CopyFiles@2
   inputs:
     contents: '**/*.war'
