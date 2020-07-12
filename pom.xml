@@ -223,5 +223,13 @@
 			</plugin> -->
 
 		</plugins>
+		
+  <distributionManagement>
+    <repository>
+      <id>vinay</id>
+      <url>http://3.91.157.37:8081/nexus/content/repositories/vinay/</url>
+    </repository>
+  </distributionManagement>
+</project>
 	</build>
 </project>
