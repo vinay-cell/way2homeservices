@@ -16,7 +16,7 @@ pipeline {
         }
         stage("Build Image") {
             steps {
-                sh "docker build -t dasarivinay879/vproapp:v1 ."
+                sh "docker build -t vinay:v1 ."
             }
         }
     }
