@@ -19,5 +19,14 @@ pipeline {
                 sh "docker build -t vinay:v1 ."
             }
         }
+        stage('Deploy our image') { 
+            steps { 
+                script { 
+                   docker.withRegistry( '', gihtub ) { 
+                        dockerImage.push() 
+                   }
+                } 
+            }
+        } 
     }
 }
