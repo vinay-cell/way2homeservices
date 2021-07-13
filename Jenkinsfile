@@ -13,20 +13,6 @@ pipeline {
             steps {
                 sh "mvn clean install"
             }
-        }
-        stage("Build Image") {
-            steps {
-                sh "docker build -t vinay:v1 ."
-            }
-        }
-        stage('Deploy our image') { 
-            steps { 
-                script { 
-                   docker.withRegistry( '', gihtub ) { 
-                        dockerImage.push() 
-                   }
-                } 
-            }
         } 
     }
 }
